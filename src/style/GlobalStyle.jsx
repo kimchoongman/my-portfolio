@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
     
     *{
         box-sizing: border-box;
+        font-family: 'Merriweather Sans', sans-serif;
     }
 `;
 
