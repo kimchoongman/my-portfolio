@@ -7,15 +7,24 @@ const Intro = () => {
       <section className='intro-bg'>
         <div className='intro-box'>
           <div className='intro-title'>
-            김충만 <br /> 프론트엔드 개발자{" "}
+            김충만 <br /> 프론트엔드 개발자
           </div>
+          <hr />
+          <div className='greeting'>
+            안녕하세요!
+            <br />
+            사람들이 사랑하는 것이 무엇인지 늘 궁금한
+            <br />
+            <span className='font-green'>꿈나무 개발자</span>입니다.
+          </div>
+          <div className='more'> 더 알아보기 ↓ </div>
         </div>
       </section>
     </StyledIntro>
   );
 };
 
-const StyledIntro = styled.section`
+const StyledIntro = styled.div`
   width: 100%;
 
   .intro-bg {
@@ -44,14 +53,46 @@ const StyledIntro = styled.section`
     height: inherit;
     max-width: 71.25rem;
     margin: 0 auto;
-    padding: calc(4rem + 4.5rem) 2rem 4rem;
+    padding: 10.5rem 2rem 4rem;
     text-align: center;
-    color: #fff;
-    line-height: 1.5;
 
     .intro-title {
+      color: #fff;
+      line-height: 1.5;
       font-family: "Black Han Sans", sans-serif;
       font-size: 4rem;
+    }
+
+    hr {
+      width: 10%;
+      height: 0;
+      border: none;
+      border-top: 0.2rem solid #f4623a;
+    }
+
+    .greeting {
+      margin-top: 1.75rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: hsla(0, 0%, 100%, 0.8);
+      line-height: 1.5;
+
+      .font-green {
+        color: #007251;
+      }
+    }
+
+    .more {
+      display: inline-block;
+      margin-top: 3rem;
+      padding: 0.75rem 1.75rem;
+      border: none;
+      border-radius: 10rem;
+      background-color: #f4623a;
+      text-decoration: none;
+      color: #fff;
+      line-height: 1.5;
+      cursor: pointer;
     }
   }
 `;
