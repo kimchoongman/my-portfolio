@@ -4,8 +4,8 @@ import reset from "styled-reset";
 const GlobalStyle = createGlobalStyle`
     ${reset};
     
-    *{
-        box-sizing: border-box;
+    *, *::before, *::after {
+    box-sizing: border-box;
     }
 `;
 
