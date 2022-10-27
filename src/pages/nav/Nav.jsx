@@ -22,6 +22,7 @@ const StyledNav = styled.nav`
   display: flex;
   justify-content: space-between;
   background-color: #fff;
+  box-shadow: 0 1px 0.3rem hsl(0deg 0% 80% / 80%);
   font-size: 1rem;
   font-family: "Merriweather Sans", sans-serif;
 
