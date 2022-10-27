@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Nav = () => {
   return (
     <StyledNav>
-      <div className='title'>Choongman's PortFolio</div>
+      <div className='title'>Choongman's Portfolio</div>
       <ul className='nav-bar'>
         <li className='category'>Intro</li>
         <li className='category'>Ifo</li>
@@ -21,11 +21,12 @@ const StyledNav = styled.nav`
   position: fixed;
   display: flex;
   justify-content: space-between;
-  border: 1px solid black;
+  background-color: #fff;
+  font-size: 1rem;
   font-family: "Merriweather Sans", sans-serif;
 
   .nav-bar {
-    width: 20%;
+    width: 25%;
     display: flex;
     justify-content: space-evenly;
   }
