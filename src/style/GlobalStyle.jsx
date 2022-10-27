@@ -4,9 +4,8 @@ import reset from "styled-reset";
 const GlobalStyle = createGlobalStyle`
     ${reset};
     
-    *{
-        box-sizing: border-box;
-        font-family: 'Merriweather Sans', sans-serif;
+    *, *::before, *::after {
+    box-sizing: border-box;
     }
 `;
 
