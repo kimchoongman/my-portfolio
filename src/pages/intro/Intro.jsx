@@ -1,7 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+import { BsChevronDoubleDown } from "react-icons/bs";
 
 const Intro = () => {
+  const handleScroll = () => {
+    window.scroll({
+      top: document.body.offsetHeight,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <StyledIntro>
       <section className='intro-bg'>
@@ -17,7 +26,9 @@ const Intro = () => {
             <br />
             <span className='font-green'>꿈나무 개발자</span>입니다.
           </div>
-          <div className='more'> 더 알아보기 ↓ </div>
+          <div className='more' onClick={handleScroll}>
+            더 알아보기 <BsChevronDoubleDown className='more-icon' />
+          </div>
         </div>
       </section>
     </StyledIntro>
@@ -53,7 +64,7 @@ const StyledIntro = styled.div`
     height: inherit;
     max-width: 71.25rem;
     margin: 0 auto;
-    padding: 10.5rem 2rem 4rem;
+    padding: 9.5rem 2rem 4rem;
     text-align: center;
 
     .intro-title {
@@ -84,7 +95,7 @@ const StyledIntro = styled.div`
 
     .more {
       display: inline-block;
-      margin-top: 3rem;
+      margin-top: 2rem;
       padding: 0.75rem 1.75rem;
       border: none;
       border-radius: 10rem;
@@ -93,6 +104,10 @@ const StyledIntro = styled.div`
       color: #fff;
       line-height: 1.5;
       cursor: pointer;
+
+      .more-icon {
+        vertical-align: middle;
+      }
     }
   }
 `;
